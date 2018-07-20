@@ -1,4 +1,4 @@
-Tutoria Usado para criar as coleções
+Tutorial Usado para criar as coleções
 http://lucene.apache.org/solr/guide/7_4/solr-tutorial.html
 
 cd C:\Projetos\solr-7.4.0
