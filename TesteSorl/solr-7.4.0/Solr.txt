@@ -1,0 +1,35 @@
+Tutoria Usado para criar as coleções
+http://lucene.apache.org/solr/guide/7_4/solr-tutorial.html
+
+cd C:\Projetos\solr-7.4.0
+
+Iniciar o Solr
+bin\solr.cmd start -e cloud
+
+http://localhost:8983/solr
+
+Para o Solr
+bin\solr.cmd stop -all
+
+
+java -jar -Dc=techproducts -Dauto example\exampledocs\post.jar example\exampledocs\*
+
+http://localhost:8983/solr/films/select?q=*:*&rows=0&facet=true&facet.field=genre_str&facet.mincount=200
+http://localhost:8983/solr/films/select?q=*:*&rows=0&facet=true&facet.range=initial_release_date&facet.range.start=NOW-20YEAR&facet.range.end=NOW&facet.range.gap=%2B1YEAR
+
+.\bin\solr start -c -p 8983 -s example\cloud\node1\solr
+
+.\bin\solr start -c -p 7574 -s example\cloud\node2\solr -z localhost:9983
+
+bin\solr delete -c films
+
+6648628690
+d3l0r34n
+
+
+bin/solr create -c films -s 2 -rf 2
+
+
+C:\Projetos\solr-7.4.0> java -jar -Dc=films -Dauto example\exampledocs\post.jar example\films\*.json
+C:\Projetos\solr-7.4.0> java -jar -Dc=films -Dauto example\exampledocs\post.jar example\films\*.xml
+C:\Projetos\solr-7.4.0> java -jar -Dc=films -Dparams=f.genre.split=true&f.directed_by.split=true&f.genre.separator=|&f.directed_by.separator=| -Dauto example\exampledocs\post.jar example\films\*.csv
