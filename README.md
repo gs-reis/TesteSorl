@@ -9,14 +9,14 @@ Ele é projetado para otimizar a recuperação de documentos - sempre que você 
 
 Para mais informações, acesse o site do [Sorl](http://lucene.apache.org/solr/), para essa aplicação foi usado a Versão 7.4.0
 
-Para mais infomações do compontente acesso o repositório [SorlNet] (https://github.com/SolrNet/SolrNet)
+Para mais infomações do compontente acesso o repositório [SorlNet](https://github.com/SolrNet/SolrNet)
 
 
 ### Pré requisitos
 
-*Esse template foi desenvolvido no Visual Studio Community 2017
-*Executado os exercicios 1 e 2 encontrado no no site oficial [Tutorial Sorl](http://lucene.apache.org/solr/guide/7_4/solr-tutorial.html).
-*Intalar no NugetPackges SorlNet e SorlNet.Core
+* Esse template foi desenvolvido no Visual Studio Community 2017
+* Executado os exercicios 1 e 2 encontrado no no site oficial [Tutorial Sorl](http://lucene.apache.org/solr/guide/7_4/solr-tutorial.html).
+* Intalar no NugetPackges SorlNet e SorlNet.Core
 
 
 ```
