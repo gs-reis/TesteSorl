@@ -15,25 +15,62 @@ namespace TesteSorl
 		{
 			Console.WriteLine("Inicio de Testes!");
 
-			var resulta = AbreMenu();
+			AbreMenu();
 
 
-			Console.WriteLine("Pressiona uma tecla para sair");
-			Console.ReadKey();
-		}
+        }
 
-		private static String AbreMenu()
+		private static void AbreMenu()
 		{
-			Console.WriteLine("Selecione uma opção:");
+            Console.WriteLine("Selecione uma opção:");
 			Console.WriteLine();
 			Console.WriteLine($"{(int)Collection.Livros} - {Collection.Livros.ToString()}");
 			Console.WriteLine($"{(int)Collection.Filmes} - {Collection.Filmes.ToString()}");
 			Console.WriteLine($"Esc para sair");
+            var key = Console.ReadKey().Key;
 
+            switch (key)
+            {
+                case ConsoleKey.D1:
+                case ConsoleKey.NumPad1:
+                case ConsoleKey.L:
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Consulta de Produtos");
+                        Console.WriteLine(ConsultaProduto());
+                        Finaliza();
 
-			return Console.ReadKey().ToString();
+                        break;
+                    }
+                case ConsoleKey.D2:
+                case ConsoleKey.NumPad2:
+                case ConsoleKey.F:
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Consulta de Filmes");
+                        Console.WriteLine(ConsultaFilmes());
+                        Finaliza();
+                        break;
+                    }
 
-		}
+                default:
+                    return;
+            }
+
+        }
+
+        private static void Finaliza()
+        {
+            Console.WriteLine();
+            Console.WriteLine($"Pressione qualquer tecla para começar ou Esc para sair");
+
+            var key = Console.ReadKey().Key;
+
+            if (key != ConsoleKey.Escape)
+            {
+                AbreMenu();
+            }
+        }
 
 		private static string ConsultaFilmes()
 		{
@@ -67,13 +104,6 @@ namespace TesteSorl
 			}
 
 
-		}
-
-
-		private static bool Sair(string comand)
-		{
-			var comandoOut = new List<string> { "sair", "out", "quit" };
-			return comandoOut.Contains(comand);
 		}
 	}
 }
