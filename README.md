@@ -1,7 +1,7 @@
 # Teste Consulta SorlNet
 Esse Projeto é um templete para uso da ferramenta SorlNet.
 
-##Começando
+## Começando
 
 O Solr é um servidor de pesquisa criado com base no Apache Lucene.
 É uma biblioteca de recuperação de informações baseada em Java de código-fonte aberto.
@@ -12,7 +12,7 @@ Para mais informações, acesse o site do [Sorl](http://lucene.apache.org/solr/)
 Para mais infomações do compontente acesso o repositório [SorlNet] (https://github.com/SolrNet/SolrNet)
 
 
-###Pré requisitos
+### Pré requisitos
 
 *Esse template foi desenvolvido no Visual Studio Community 2017
 *Executado os exercicios 1 e 2 encontrado no no site oficial [Tutorial Sorl](http://lucene.apache.org/solr/guide/7_4/solr-tutorial.html).
