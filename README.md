@@ -20,7 +20,7 @@ Para mais infomações do compontente acesso o repositório [SorlNet](https://gi
 
 
 ```
-Para comecar o serviço tem que estar no ar, para isso acesse http://localhost:8983/solr
+Para comecar o serviço tem que estar no ar, para isso acesse [http://localhost:8983/solr](http://localhost:8983/solr)
 ```
 
 ## Authors
