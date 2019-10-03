@@ -23,9 +23,11 @@ Para mais infomações do compontente acesso o repositório [SorlNet](https://gi
 Para comecar o serviço tem que estar no ar, para isso acesse [Loca Host Solr](http://localhost:8983/solr)
 ```
 
-## Authors
+## Licence
 
-* **Gabriel S. Reis** - *Trabalho inicial* - [PurpleBooth](https://github.com/gs-reis)
+O código fonte pode ser encontrado no [github](https://github.com/gs-reis/TesteSorl), licenciado sob o [MIT](http://opensource.org/licenses/mit-license.php).
+
+Desenvolvido por [Gabriel Santos Reis](https://www.linkedin.com/in/gsreis/)
 
 Veja também a lista de [colaboradores](https://github.com/gs-reis/TesteSorl/graphs/contributors) que participaram deste projeto.
 
